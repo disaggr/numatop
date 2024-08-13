@@ -188,6 +188,7 @@ cpu_type_get(void)
 			type = CPU_BDX;
 			break;
 		case 85:
+		case 142:
 			type = CPU_SKX;
 			break;
 		case 106:

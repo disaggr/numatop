@@ -72,7 +72,9 @@ static plat_event_config_t s_emr_config[PERF_COUNT_NUM] = {
 };
 
 static plat_event_config_t s_skl_ll = {
-	PERF_TYPE_RAW, 0x01CD, 0x53, LL_THRESH, 0, 1, "mem_trans_retired.latency_above_threshold"
+	//PERF_TYPE_RAW, 0x01CD, 0x53, LL_THRESH, 0, 1, "mem_trans_retired.latency_above_threshold"
+	//PERF_TYPE_RAW, 0x01CD, 0x53, 0x80, 0, 1, "mem_trans_retired.load_latency_gt_128"
+	PERF_TYPE_RAW, 0x01CD, 0x53, 0x100, 0, 1, "mem_trans_retired.load_latency_gt_256"
 };
 
 void
